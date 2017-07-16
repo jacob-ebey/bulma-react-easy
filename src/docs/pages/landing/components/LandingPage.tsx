@@ -48,16 +48,16 @@ export class LandingPage extends React.Component<any, LandingPageProps> {
                   <polygon id="Path" points="136 296 156 156 236 76 336 176 276 236 356 316 236 396" />
                 </g>
               </svg>
+
               <Title>Bulma React</Title>
               <Title type="subtitle">
                 The React wrapper around <a href="http://bulma.io/"><strong>Bulma</strong></a>
               </Title>
+
               <pre style={{ display: 'inline-block', color: '#00d1b2' }}>
                 <code style={{ fontWeight: 'bold' }}>npm install bulma-react</code>
               </pre>
-
               <br />
-
               <Button icon="fa-github" size="small" style={{ marginRight: 5 }}>Star</Button>
               <Button icon="fa-github" size="small">Fork</Button>
 
