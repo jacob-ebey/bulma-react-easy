@@ -27,7 +27,7 @@ export const getClassName = <T>(
   }
 
   if (props !== undefined && props.helper !== undefined) {
-    helperClass = Array.isArray(props.helper) ? props.helper.join(' ') : props.helper;
+    helperClass = `${helperClass} ${Array.isArray(props.helper) ? props.helper.join(' ') : props.helper}`;
   }
 
   return [

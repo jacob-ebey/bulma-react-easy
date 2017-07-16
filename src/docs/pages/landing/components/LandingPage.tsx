@@ -41,8 +41,8 @@ export class LandingPage extends React.Component<any, LandingPageProps> {
     return (
       <div>
         <Container>
-          <Section>
-            <Hero helper="has-text-centered">
+          <Hero size="fullheight">
+            <Container className="has-text-centered">
               <svg width={240} height={240} viewBox="0 0 480 480" version="1.1">
                 <g stroke="none" strokeWidth="1" fill="#00d1b2" fillRule="evenodd">
                   <polygon id="Path" points="136 296 156 156 236 76 336 176 276 236 356 316 236 396" />
@@ -65,9 +65,9 @@ export class LandingPage extends React.Component<any, LandingPageProps> {
 
               <Button icon="fa-download" size="large" color="primary" style={{ marginRight: 10 }}>Download</Button>
               <Button size="large">View Docs</Button>
-            </Hero>
-          </Section>
-        </Container >
+            </Container>
+          </Hero>
+        </Container>
 
         <Hero color="primary">
           <Container>
@@ -128,6 +128,7 @@ export class LandingPage extends React.Component<any, LandingPageProps> {
 
               <Container helper="has-text-centered">
                 <Button
+                  icon="fa-plus"
                   onClick={
                     () => {
                       this.setState({ columnCount: columnCount === 12 ? columnCount : columnCount + 1 });
@@ -137,6 +138,7 @@ export class LandingPage extends React.Component<any, LandingPageProps> {
                   Add Column
                 </Button>
                 <Button
+                  icon="fa-remove"
                   onClick={
                     () => {
                       this.setState({ columnCount: columnCount === 1 ? columnCount : columnCount - 1 });
