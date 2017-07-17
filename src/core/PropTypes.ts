@@ -1,10 +1,33 @@
 import * as React from 'react';
 
-export type HelperClass = 'is-clearfix' | 'is-pulled-left' | 'is-pulled-right' |
-  'is-overlay' | 'is-fullwidth' | 'has-text-centered' | 'has-text-left' | 'has-text-right' |
-  'is-marginless' | 'is-paddingless' | 'is-unselectable' | 'is-hidden';
+export type HelperClass =
+  'is-clearfix' |
+  'is-pulled-left' |
+  'is-pulled-right' |
+  'is-overlay' |
+  'is-fullwidth' |
+  'has-text-centered' |
+  'has-text-left' |
+  'has-text-right' |
+  'is-marginless' |
+  'is-paddingless' |
+  'is-unselectable' |
+  'is-hidden';
 
-type KVPType = { [key: string]: any };
+export type BaseColor =
+  'primary' |
+  'info' |
+  'success' |
+  'warning' |
+  'danger';
+
+export type ShadeColor =
+  'white' |
+  'light' |
+  'dark' |
+  'black';
+
+  type KVPType = { [key: string]: any };
 
 export interface BaseProps<T> extends React.Props<T>, KVPType {
   helper?: HelperClass | HelperClass[];

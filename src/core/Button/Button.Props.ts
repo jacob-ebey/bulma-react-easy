@@ -1,20 +1,14 @@
 import * as React from 'react';
-import { BaseProps } from '../PropTypes';
+import { BaseProps, ShadeColor, BaseColor } from '../PropTypes';
 import { FontAwesomeIcon, IconSize } from '../FontAwesomeIcon';
 import { Button } from './Button';
 
-export type ButtonColor =
-  'white' |
-  'light' |
-  'dark' |
-  'black' |
-  'link' |
-  'primary' |
-  'info' |
-  'success' |
-  'warning' |
-  'danger';
 
+export type ButtonColor =
+ BaseColor | 
+ ShadeColor|
+ 'link';
+  
 export type ButtonSize = 'small' | 'medium' | 'large';
 
 export type ButtonModifier = 'outlined' | 'inverted';
