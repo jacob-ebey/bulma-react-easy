@@ -20,7 +20,7 @@ export class Shell extends React.Component<ShellProps> {
               { key: 'docs', label: 'Docs', link: '/#/docs' },
             ]}
             farItems={[
-              { key: 'github', label: 'GitHub', link: '/#' },
+              { key: 'github', label: 'GitHub', link: 'https://github.com/jacob-ebey/bulma-react-easy' },
               { key: 'twitter', label: 'Twitter', link: '/#' },
             ]}
           />
@@ -36,10 +36,11 @@ export class Shell extends React.Component<ShellProps> {
           <Container>
             <Content>
               <p>
-                <strong>Bluma React</strong> by <a href="https://github.com/jacob-ebey">Jacob Ebey</a>.
+                <strong>Best Bluma React</strong> by
+                <a href="https://github.com/jacob-ebey/bulma-react-easy"> Jacob Ebey</a>.
               </p>
               <p>
-                <a className="icon" href="https://github.com/jacob-ebey">
+                <a className="icon" href="https://github.com/jacob-ebey/bulma-react-easy">
                   <i className="fa fa-github" />
                 </a>
               </p>

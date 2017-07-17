@@ -17,7 +17,7 @@ export class Header extends React.Component<{}> {
                 </g>
               </svg>
 
-              <Title>Bulma React</Title>
+              <Title>Best Bulma React</Title>
               <Title type="subtitle">
                 A <strong>typed</strong> React wrapper for <a href="http://bulma.io/"><strong>Bulma</strong></a>
               </Title>
