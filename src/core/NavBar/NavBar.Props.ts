@@ -1,5 +1,4 @@
 export interface NavBarItem {
-  key: string | number;
   label: string;
   link: string;
 }

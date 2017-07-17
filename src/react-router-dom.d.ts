@@ -1,5 +1,6 @@
 declare module 'react-router-dom' {
   import * as React from 'react';
+  import * as History from 'history';
 
   export interface HashRouterProps {
     history?: any;
@@ -12,4 +13,14 @@ declare module 'react-router-dom' {
     exact?: boolean;
   }
   export class Route extends React.Component<RouteProps> { }
+
+  export interface RouterChildContext {
+    router?: {
+      history: History.History
+      route: {
+        location: History.Location
+        match: any;
+      }
+    };
+  }
 }

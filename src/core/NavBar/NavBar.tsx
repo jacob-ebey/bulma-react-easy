@@ -12,13 +12,13 @@ export class NavBar extends React.Component<NavBarProps, {}> {
 
     const navbarItems = items && items.map((item) => {
       let navbarItemClass = 'navbar-item';
-      if (activeItems !== undefined && activeItems.find((active) => active === item.key)) {
+      if (activeItems !== undefined && activeItems.find((active) => active === item.link)) {
         navbarItemClass = `${navbarItemClass} is-active`;
       }
 
       return (
         <a
-          key={item.key}
+          key={item.link}
           href={item.link}
           className={navbarItemClass}
         >
@@ -28,7 +28,7 @@ export class NavBar extends React.Component<NavBarProps, {}> {
     });
 
     const navbarFarItems = farItems && farItems.map((item) => (
-      <a className="navbar-item" key={item.key} href={item.link}>
+      <a className="navbar-item" key={item.link} href={item.link}>
         {item.label}
       </a>
     ));

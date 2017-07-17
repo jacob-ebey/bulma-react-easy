@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { HashRouter as Router, Route, RouteProps } from 'react-router-dom';
+import { Route, RouteProps } from 'react-router-dom';
 
 import { Container, Content, Footer, NavBar } from '../../core';
 import { ShellProps } from './Shell.Props';
@@ -8,29 +8,31 @@ import { ShellProps } from './Shell.Props';
 export class Shell extends React.Component<ShellProps> {
   public render() {
     const { routes } = this.props;
+    const split = window.location.href.split('/');
+    const index = split.indexOf('#');
+
+    let activeItem: string = index !== -1 && index + 1 < split.length ?
+      `#/${split.slice(index + 1).join('/')}` :
+      `#/`;
 
     return (
       <div>
         <Container>
           <NavBar
             image="http://bulma.io/images/bulma-logo.png"
-            activeItems={['home']}
+            activeItems={[activeItem]}
             items={[
-              { key: 'home', label: 'Home', link: '/#' },
-              { key: 'docs', label: 'Docs', link: '/#/docs' },
+              { label: 'Home', link: '#/' },
+              { label: 'Docs', link: '#/docs' },
             ]}
             farItems={[
-              { key: 'github', label: 'GitHub', link: 'https://github.com/jacob-ebey/bulma-react-easy' },
-              { key: 'twitter', label: 'Twitter', link: '/#' },
+              { label: 'GitHub', link: 'https://github.com/jacob-ebey/bulma-react-easy' },
+              { label: 'Twitter', link: 'https://twitter.com/' },
             ]}
           />
         </Container>
 
-        <Router>
-          <div>
-            {routes && routes.map((route: RouteProps) => <Route key={route.path} {...route} />)}
-          </div>
-        </Router>
+        {routes && routes.map((route: RouteProps) => <Route key={route.path} {...route} />)}
 
         <Footer helper="has-text-centered">
           <Container>
