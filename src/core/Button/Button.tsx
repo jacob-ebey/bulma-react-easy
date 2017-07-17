@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { FontAwesomeIcon, getClassName } from '../PropTypes';
+import { getClassName } from '../PropTypes';
+import { FontAwesomeIcon, Icon } from '../FontAwesomeIcon';
 import { ButtonProps, buttonIsProps } from './Button.Props';
 
 export class Button extends React.Component<ButtonProps, {}> {
@@ -39,14 +40,10 @@ export class Button extends React.Component<ButtonProps, {}> {
 
     return Array.isArray(icon) ?
       icon.map((i, index) => (
-        <span key={index} className={`icon is-${iconSize}`}>
-          <i className={`fa ${i}`} />
-        </span>
+        <Icon key={index} icon={i} size={iconSize} />
       )) :
       (
-        <span className={`icon is-${iconSize}`}>
-          <i className={`fa ${icon}`} />
-        </span>
+        <Icon icon={icon} size={iconSize} />
       );
   }
 }

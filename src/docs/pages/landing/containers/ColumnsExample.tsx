@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Button, Column, Container, Content, Section, ResponsiveLayout, Title } from '../../../../core';
+import { Button, Column, Container, Content, Section, ResponsiveLayout, Title, Icon } from '../../../../core';
 
 export interface ColumnsExampleProps {
   columnCount: number;
@@ -37,10 +37,8 @@ export class ColumnsExample extends React.Component<ColumnsExampleProps> {
         <Content size="medium">
           <Section>
             <Title component="h3" size="2">
-              <span className="icon is-medium">
-                <i className="fa fa-pause" />
-              </span>
-              Simple <strong>columns</strong>
+              <Icon icon="fa-pause" size="large" />
+              <span> Simple <strong>columns</strong></span>
             </Title>
             <Title component="h4" type="subtitle" size="4">
               Just add columns, they will resize themselves
@@ -53,12 +51,16 @@ export class ColumnsExample extends React.Component<ColumnsExampleProps> {
             <Container helper="has-text-centered">
               <Button
                 icon="fa-plus"
+                size="medium"
+                iconSize="medium"
                 onClick={increment}
               >
                 Add Column
               </Button>
               <Button
                 icon="fa-remove"
+                size="medium"
+                iconSize="medium"
                 onClick={decrement}
               >
                 Remove Column

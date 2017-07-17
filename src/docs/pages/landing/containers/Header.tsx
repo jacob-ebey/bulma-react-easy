@@ -31,7 +31,15 @@ export class Header extends React.Component<{}> {
 
               <br /><br />
 
-              <Button icon="fa-download" size="large" color="primary" style={marginRightStyle}>Download</Button>
+              <Button
+                icon="fa-download"
+                size="large"
+                iconSize="medium"
+                color="primary"
+                style={marginRightStyle}
+              >
+                Download
+              </Button>
               <Button size="large" href="#/docs">View Docs</Button>
             </Container>
           </Hero>

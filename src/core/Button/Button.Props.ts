@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { BaseProps, FontAwesomeIcon } from '../PropTypes';
+import { BaseProps } from '../PropTypes';
+import { FontAwesomeIcon, IconSize } from '../FontAwesomeIcon';
 import { Button } from './Button';
 
 export type ButtonColor =
@@ -29,7 +30,7 @@ export interface ButtonProps extends BaseProps<Button> {
   isStatic?: boolean;
   disabled?: boolean;
   icon?: FontAwesomeIcon | FontAwesomeIcon[];
-  iconSize?: ButtonSize;
+  iconSize?: IconSize;
   onClick?: React.EventHandler<React.MouseEvent<any>>;
   href?: string;
 }

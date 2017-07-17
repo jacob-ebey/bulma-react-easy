@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-export { FontAwesomeIcon } from './FontAwesomeIcon';
-
 export type HelperClass = 'is-clearfix' | 'is-pulled-left' | 'is-pulled-right' |
   'is-overlay' | 'is-fullwidth' | 'has-text-centered' | 'has-text-left' | 'has-text-right' |
   'is-marginless' | 'is-paddingless' | 'is-unselectable' | 'is-hidden';
