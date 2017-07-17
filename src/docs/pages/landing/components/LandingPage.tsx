@@ -3,11 +3,11 @@ import * as React from 'react';
 
 import { ColumnsExample, Header } from '../containers';
 
-export interface LandingPageProps {
+export interface LandingPageState {
   columnCount: number;
 }
 
-export class LandingPage extends React.Component<any, LandingPageProps> {
+export class LandingPage extends React.Component<any, LandingPageState> {
   public constructor() {
     super();
     this.state = {

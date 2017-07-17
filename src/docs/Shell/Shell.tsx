@@ -17,6 +17,7 @@ export class Shell extends React.Component<ShellProps> {
             activeItems={['home']}
             items={[
               { key: 'home', label: 'Home', link: '/#' },
+              { key: 'docs', label: 'Docs', link: '/#/docs' },
             ]}
             farItems={[
               { key: 'github', label: 'GitHub', link: '/#' },

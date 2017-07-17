@@ -4,6 +4,8 @@ import { Button, Column, Container, Hero, ResponsiveLayout, Title } from '../../
 
 export class Header extends React.Component<{}> {
   public render() {
+    const marginRightStyle = { marginRight: 10 };
+
     return (
       <div>
         <Container>
@@ -21,7 +23,7 @@ export class Header extends React.Component<{}> {
               </Title>
 
               <pre style={{ display: 'inline-block', color: '#00d1b2' }}>
-                <code style={{ fontWeight: 'bold' }}>npm install bulma-react</code>
+                <code style={{ fontWeight: 'bold' }}>npm install best-bulma-react</code>
               </pre>
               <br />
               <Button icon="fa-github" size="small" style={{ marginRight: 5 }}>Star</Button>
@@ -29,8 +31,8 @@ export class Header extends React.Component<{}> {
 
               <br /><br />
 
-              <Button icon="fa-download" size="large" color="primary" style={{ marginRight: 10 }}>Download</Button>
-              <Button size="large">View Docs</Button>
+              <Button icon="fa-download" size="large" color="primary" style={marginRightStyle}>Download</Button>
+              <Button size="large" href="#/docs">View Docs</Button>
             </Container>
           </Hero>
         </Container>
@@ -45,7 +47,7 @@ export class Header extends React.Component<{}> {
                 <span className="icon is-large">
                   <i className="fa fa-tablet" />
                 </span>
-                <span className="icon is-large" style={{ marginRight: 10 }}>
+                <span className="icon is-large" style={marginRightStyle}>
                   <i className="fa fa-desktop" />
                 </span>
                 <Title component="p" size="4"><strong>Responsive</strong></Title>

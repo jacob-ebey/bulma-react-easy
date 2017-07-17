@@ -9,11 +9,12 @@ export class Button extends React.Component<ButtonProps, {}> {
   };
 
   public render() {
-    const { children, style, onClick, isStatic, icon } = this.props;
+    const { children, style, onClick, isStatic, icon, href } = this.props;
 
     return (
       <a
         style={style}
+        href={href}
         onClick={onClick}
         className={getClassName(['button', isStatic ? 'is-static' : ''], this.props, buttonIsProps)}
       >

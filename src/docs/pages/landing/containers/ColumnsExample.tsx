@@ -71,7 +71,7 @@ export class ColumnsExample extends React.Component<ColumnsExampleProps> {
                   <p className="message-header">Info</p>
                   <p className="message-body">
                     While it's possible to add as many columns as you want, it is recommended to stick with
-                      <strong> 12 columns</strong>.<br />
+                     <strong> 12 columns</strong>.<br />
                     If you want smaller divisions, you can always <strong>nest</strong> columns.
                     </p>
                 </div>

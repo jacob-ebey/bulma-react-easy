@@ -31,6 +31,7 @@ export interface ButtonProps extends BaseProps<Button> {
   icon?: FontAwesomeIcon | FontAwesomeIcon[];
   iconSize?: ButtonSize;
   onClick?: React.EventHandler<React.MouseEvent<any>>;
+  href?: string;
 }
 
 export const buttonIsProps: string[] = [
