@@ -4,6 +4,7 @@ export * from './Button';
 export * from './Container';
 export * from './Content';
 export * from './Delete';
+export * from './Image';
 export * from './FontAwesomeIcon';
 export * from './Footer';
 export * from './Hero';
