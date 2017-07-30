@@ -1,8 +1,7 @@
 
 import * as React from 'react';
 
-import { Delete } from '../../../../core';
-
+import { Delete, Image } from '../../../../core';
 import { Header } from '../containers';
 
 export class DocsPage extends React.Component<any, any> {
@@ -26,6 +25,10 @@ export class DocsPage extends React.Component<any, any> {
         >
         
         </Delete>
+        <Image 
+          src="http://via.placeholder.com/350x150"
+          size="128x128"
+        />
 
 
 
